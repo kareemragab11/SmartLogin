@@ -1,0 +1,178 @@
+/* html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #24353F;
+    font-family: sans-serif;
+}
+.boxshadow {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.login-card {
+    background-color: #24353F;
+}
+
+.login-card h1 {
+    color: #17a3b8c2;
+}
+
+.login-card input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+.login-card input::placeholder {
+    color: #c6cdd3ff;
+}
+.login-card a:hover{
+    text-decoration: underline !important;
+}
+nav .nav-bar{
+    background-color: #24353F;
+}
+nav a{
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+main.hamozo{
+    height: 80vh;
+}
+main.hamozo h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #17A2B8;
+} */
+
+
+
+
+
+
+/* ===== SMART LOGIN - GLASSMORPHIC NEON STYLE ===== */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1f26, #232a34, #141a21);
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Animated gradient background glow */
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 25% 25%, #00e1ff33, transparent 70%),
+              radial-gradient(circle at 75% 75%, #ff00d633, transparent 70%);
+  animation: moveGlow 10s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes moveGlow {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-50px, 50px); }
+}
+
+/* Login Card */
+.boxshadow {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 225, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxshadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 225, 255, 0.3);
+}
+
+/* Title */
+.login-card h1 {
+  color: #00e1ff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 0 0 8px rgba(0, 225, 255, 0.6);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #00e1ff;
+  box-shadow: 0 0 12px rgba(0, 225, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* Buttons */
+.btn-outline-info {
+  background: linear-gradient(90deg, #00e1ff, #ff00d6);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 0 15px rgba(0, 225, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-info:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 214, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Warning Text */
+#warrning {
+  font-size: 0.95rem;
+  color: #ff4b6e;
+  font-weight: 500;
+  margin-top: 10px;
+  text-shadow: 0 0 6px rgba(255, 0, 119, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#warrning:not(.d-none) {
+  opacity: 1;
+}
+
+/* Bottom Links */
+.text-white {
+  color: #b9c2d1 !important;
+}
+.text-white a {
+  color: #00e1ff !important;
+  font-weight: 600;
+}
+.text-white a:hover {
+  color: #ff00d6 !important;
+  text-decoration: underline;
+}
+
+/* Navbar on Home */
+.navbar {
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter

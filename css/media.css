@@ -1,0 +1,48 @@
+/* Breakpoints */
+/* XS BREAKPOINT */
+/* Like : Smart Watches */
+@media Screen and (width < 640px) {
+    .xs-100 {
+        width: 100%;
+    }
+}
+
+/* SM BREAKPOINT */
+/* Like : Small Smart Phones */
+@media Screen and (640px <=width < 768px) {
+    .sm-100 {
+        width: 100%;
+    }
+}
+
+/* MD BREAKPOINT */
+/* Like : Smart Phones */
+@media Screen and (768px <=width < 1024px) {
+    .md-50 {
+        width: 50%;
+    }
+}
+
+/* LG BREAKPOINT */
+/* Like : Small Laptops */
+@media Screen and (1024px <=width < 1280px) {
+    .lg-33 {
+        width: 33.3333%;
+    }
+}
+
+/* XL BREAKPOINT */
+/* Like : Laptop */
+@media Screen and (1280px <=width < 1536px) {
+    .xl-25 {
+        width: 25%;
+    }
+}
+
+/* XXL BREAKPOINT */
+/* Like : Smart TV */
+@media Screen and (1536px <=width) {
+    .xxl-20 {
+        width: 20%;
+    }
+}
